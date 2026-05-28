@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ktxx AI</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        Ktxx AI
+    </div>
+
+    <button onclick="newChat()">
+        + New Chat
+    </button>
+
+    <div class="history" id="history">
+    </div>
+
+</div>
+
+<div class="main">
+
+    <div class="topbar">
+        Ktxx AI Browser Assistant
+    </div>
+
+    <div class="chat-box" id="chatBox">
+
+        <div class="ai-message">
+            Halo 👋 Saya Ktxx AI.<br>
+            Tulis request coding atau desain kamu.
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <textarea
+            id="userInput"
+            placeholder="Tulis pesan..."
+        ></textarea>
+
+        <button onclick="sendMessage()">
+            SEND
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
